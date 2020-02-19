@@ -1,7 +1,6 @@
 {
   "dependencies": {},
-  "peerDependencies": {
-  },
+  "peerDependencies": {},
   "deprecated": false,
   "description": "Social Signin with Twitter",
   "engines": {
