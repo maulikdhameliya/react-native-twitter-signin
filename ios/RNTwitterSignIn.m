@@ -25,6 +25,7 @@ RCT_EXPORT_MODULE();
 RCT_EXPORT_METHOD(init: (NSString *)consumerKey consumerSecret:(NSString *)consumerSecret resolver:(RCTPromiseResolveBlock)resolve
                   rejecter:(RCTPromiseRejectBlock)reject)
 {
+    authNotResolved = true;
     [[Twitter sharedInstance] startWithConsumerKey:consumerKey consumerSecret:consumerSecret];
 }
 RCT_EXPORT_METHOD(logIn: (RCTPromiseResolveBlock)resolve
